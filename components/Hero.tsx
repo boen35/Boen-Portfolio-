@@ -1,6 +1,29 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
+const cards = [
+  {
+    type: 'video',
+    src: '/assets/3d-trophy.mp4',
+    alt: '3D Gold Character Trophy Loop'
+  },
+  {
+    type: 'video',
+    src: '/assets/ai-course-creator.mp4', 
+    alt: 'AI Course Creator Interface'
+  },
+  {
+    type: 'image',
+    src: '/assets/user-testing.jpg',
+    alt: 'User Testing Session'
+  },
+  {
+    type: 'image',
+    src: '/assets/cnn-money.jpg',
+    alt: 'CNN Money Responsive Design'
+  }
+];
+
 const Hero: React.FC = () => {
   return (
     <section className="relative flex flex-col items-center justify-start py-0 text-center w-full mx-auto">
@@ -22,6 +45,34 @@ const Hero: React.FC = () => {
         <br className="block my-2" />
         I have grown into a designer who seamlessly brings <span className="font-serif italic text-base sm:text-lg md:text-xl text-text">business</span> and <span className="font-serif italic text-base sm:text-lg md:text-xl text-text">design</span> together.
       </motion.h1>
+
+      <motion.div
+        initial={{ opacity: 0, y: 40 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, ease: "easeOut", delay: 0.4 }}
+        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 w-full mt-12 px-4"
+      >
+        {cards.map((card, index) => (
+          <div key={index} className="relative aspect-[4/3] rounded-xl overflow-hidden shadow-sm bg-gray-200 group">
+            {card.type === 'video' ? (
+              <video
+                src={card.src}
+                className="w-full h-full object-cover"
+                autoPlay
+                loop
+                muted
+                playsInline
+              />
+            ) : (
+              <img
+                src={card.src}
+                alt={card.alt}
+                className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+              />
+            )}
+          </div>
+        ))}
+      </motion.div>
 
       <motion.div
         initial={{ opacity: 0 }}
