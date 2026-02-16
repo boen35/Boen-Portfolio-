@@ -4,8 +4,8 @@ import react from '@vitejs/plugin-react';
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  // Using './' ensures relative paths for GitHub Pages subdirectories
-  base: './',
+  // When using a custom domain (boenjiang.com), the base should be root '/'
+  base: '/',
   server: {
     host: true,
     port: 5173
