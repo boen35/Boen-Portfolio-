@@ -36,7 +36,7 @@ const SensingSection: React.FC = () => {
             className="bg-[#F2F2F0] p-8 md:p-10 rounded-2xl"
           >
              <h3 className="font-serif italic text-xl mb-3">Sensing Interfaces,</h3>
-            <p className="font-sans text-sm md:text-base text-text-muted leading-relaxed">
+            <p className="font-serif text-lg text-text-muted leading-relaxed">
               what does it mean to connect through touch with something that is not present in the physical world? We investigate how feedback from digital systems can broaden the definition of tactile and bring more natural unpredictability into the virtual.
             </p>
           </motion.div>

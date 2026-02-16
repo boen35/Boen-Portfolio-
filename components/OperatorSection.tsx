@@ -31,7 +31,7 @@ const OperatorSection: React.FC = () => {
             className="mt-8 md:mt-12 bg-[#F2F2F0] p-6 md:p-8 rounded-2xl md:max-w-sm ml-0 md:ml-4"
           >
             <h3 className="font-serif italic text-xl mb-2">OPERATOR,</h3>
-            <p className="font-sans text-sm md:text-base text-text-muted leading-relaxed">
+            <p className="font-serif text-lg text-text-muted leading-relaxed">
               a spatial music production tool and our first app produced for Apple Vision Pro. Inspired by industrial design and architectural models, OPERATOR provides an intuitive experience of arranging blocks into musical sequences.
             </p>
           </motion.div>
