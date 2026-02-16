@@ -18,7 +18,7 @@ const SensingSection: React.FC = () => {
             {/* Using an abstract minimal 3D shape if possible, or an image */}
             <div className="w-full h-full relative">
                 <img 
-                  src="https://picsum.photos/seed/sphere3d/600/600" 
+                  src="/assets/Sensing-Sphere.webp" 
                   alt="Abstract Sphere" 
                   className="w-full h-full object-contain grayscale hover:scale-105 transition-transform duration-700 ease-out mix-blend-multiply"
                 />
@@ -52,7 +52,7 @@ const SensingSection: React.FC = () => {
             className="overflow-hidden rounded-2xl md:rounded-3xl shadow-xl"
           >
             <img 
-              src="https://picsum.photos/seed/darkhand/600/400" 
+              src="/assets/Sensing-Hand.jpg" 
               alt="Hand Interface Interaction" 
               className="w-full h-auto object-cover aspect-[3/2] hover:scale-105 transition-transform duration-700 ease-out"
             />
@@ -69,7 +69,7 @@ const SensingSection: React.FC = () => {
             className="overflow-hidden rounded-2xl md:rounded-3xl shadow-lg"
           >
             <img 
-              src="https://picsum.photos/seed/minimalarch/1000/700" 
+              src="/assets/Sensing-Geometry.webp" 
               alt="Minimal Geometric Forms" 
               className="w-full h-auto object-cover aspect-[16/10] hover:scale-105 transition-transform duration-700 ease-out"
             />

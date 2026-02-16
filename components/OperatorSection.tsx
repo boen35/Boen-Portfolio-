@@ -16,7 +16,7 @@ const OperatorSection: React.FC = () => {
             className="overflow-hidden rounded-2xl md:rounded-3xl shadow-lg"
           >
             <img 
-              src="https://picsum.photos/seed/courtyard/600/800" 
+              src="/assets/Operator-Courtyard.webp" 
               alt="AR Interface in Courtyard" 
               className="w-full h-auto object-cover aspect-[3/4] hover:scale-105 transition-transform duration-700 ease-out"
             />
@@ -47,7 +47,7 @@ const OperatorSection: React.FC = () => {
             className="overflow-hidden rounded-2xl md:rounded-3xl shadow-xl"
           >
             <img 
-              src="https://picsum.photos/seed/vrheadset/800/500" 
+              src="/assets/Operator-VR-Man.jpg" 
               alt="Man using VR Headset" 
               className="w-full h-auto object-cover aspect-[16/10] hover:scale-105 transition-transform duration-700 ease-out"
             />
@@ -64,7 +64,7 @@ const OperatorSection: React.FC = () => {
             className="overflow-hidden rounded-2xl md:rounded-3xl shadow-lg"
           >
             <img 
-              src="https://picsum.photos/seed/musicui/700/900" 
+              src="/assets/Operator-Interface.webp" 
               alt="Spatial Music Interface" 
               className="w-full h-auto object-cover aspect-[4/5] hover:scale-105 transition-transform duration-700 ease-out"
             />

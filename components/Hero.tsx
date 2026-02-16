@@ -1,5 +1,5 @@
 import React, { useRef, useEffect, useState } from 'react';
-import { motion, useSpring, useTransform, AnimatePresence } from 'framer-motion';
+import { motion, useSpring, useTransform, AnimatePresence, Variants } from 'framer-motion';
 
 const cards = [
   {
@@ -43,7 +43,7 @@ const cards = [
 const TypewriterText = ({ text }: { text: string }) => {
   const words = text.split(" ");
 
-  const container = {
+  const container: Variants = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
@@ -51,7 +51,7 @@ const TypewriterText = ({ text }: { text: string }) => {
     }
   };
 
-  const child = {
+  const child: Variants = {
     hidden: { opacity: 0, y: 5 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.15, ease: "easeOut" } }
   };
