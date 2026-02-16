@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
   background-color: #F9F9F7;
   color: #1C1C1C;
@@ -10,7 +14,6 @@ body {
   perspective: 2000px;
 }
 
-/* Ensure smooth scrolling for the whole page */
 html {
   scroll-behavior: smooth;
 }
