@@ -4,23 +4,23 @@ import { motion } from 'framer-motion';
 const cards = [
   {
     type: 'video',
-    src: '/assets/3d-trophy.mp4',
-    alt: '3D Gold Character Trophy Loop'
+    src: '/assets/Luna Park Header card.mp4',
+    alt: 'Luna Park 3D Character Loop'
   },
   {
     type: 'video',
-    src: '/assets/ai-course-creator.mp4', 
-    alt: 'AI Course Creator Interface'
+    src: '/assets/Quinn header card.mp4', 
+    alt: 'Quinn App Interface'
   },
   {
     type: 'image',
-    src: '/assets/user-testing.jpg',
-    alt: 'User Testing Session'
+    src: '/assets/OKC cover.jpg',
+    alt: 'OKCupid Case Study'
   },
   {
     type: 'image',
-    src: '/assets/cnn-money.jpg',
-    alt: 'CNN Money Responsive Design'
+    src: '/assets/CNN cover.webp',
+    alt: 'CNN Money Design'
   }
 ];
 
@@ -57,7 +57,7 @@ const Hero: React.FC = () => {
             {card.type === 'video' ? (
               <video
                 src={card.src}
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover pointer-events-none"
                 autoPlay
                 loop
                 muted
