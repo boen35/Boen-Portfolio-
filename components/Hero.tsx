@@ -4,16 +4,16 @@ import { motion, useSpring, useTransform, AnimatePresence, Variants } from 'fram
 const cards = [
   {
     type: 'image',
-    src: '/assets/CNN cover.webp',
+    src: '/assets/CNN%20cover.webp',
     alt: 'CNN Money Design',
     rotation: -2,
     className: 'lg:mt-0',
-    logo: '/assets/cnn logo.png',
+    logo: '/assets/cnn%20logo.png',
     description: "I helped build the CNN website as part of the Product Design team in New York City."
   },
   {
     type: 'image',
-    src: '/assets/OKC cover.jpg',
+    src: '/assets/OKC%20cover.jpg',
     alt: 'OKCupid Case Study',
     rotation: 3,
     className: 'lg:mt-8',
@@ -22,20 +22,20 @@ const cards = [
   },
   {
     type: 'video',
-    src: '/assets/Luna Park Header card.mp4',
+    src: '/assets/Luna%20Park%20Header%20card.mp4',
     alt: 'Luna Park 3D Character Loop',
     rotation: -3,
     className: 'lg:-mt-6',
-    logo: '/assets/Luna Park logo.png',
+    logo: '/assets/Luna%20Park%20logo.png',
     description: "During the 2020 lockdown, I joined a startup as Product Design Director to build something one-of-a-kind: an immersive virtual social gaming platform for millions unable to meet in person. From live-hosted game shows to a library of thousands of on-demand games, we built a platform loved by our customers."
   },
   {
     type: 'video',
-    src: '/assets/Quinn header card.mp4', 
+    src: '/assets/Quinn%20header%20card.mp4', 
     alt: 'Quinn App Interface',
     rotation: 2,
     className: 'lg:mt-4',
-    logo: '/assets/Quinn logo.png',
+    logo: '/assets/Quinn%20logo.png',
     description: "Leveraging our success with Luna Park, our team built an AI platform focused on employee training. From transforming SOPs into interactive courses to tracking results, Quinn has significantly boosted corporate training efficiency."
   }
 ];
@@ -155,7 +155,7 @@ const FloatingHeader: React.FC<FloatingHeaderProps> = ({ isVisible }) => {
                             className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-300 ${isHovered ? 'opacity-0' : 'opacity-100'}`}
                          />
                          <img 
-                            src="/assets/B profile.png" 
+                            src="/assets/B%20profile.png" 
                             alt="Profile"
                             className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-300 ${isHovered ? 'opacity-100' : 'opacity-0'}`}
                          />
@@ -369,7 +369,7 @@ const Hero: React.FC = () => {
                 className={`w-full h-full object-contain absolute inset-0 transition-opacity duration-300 ${isProfileHovered ? 'opacity-0' : 'opacity-100'}`}
              />
              <img 
-                src="/assets/B profile.png"
+                src="/assets/B%20profile.png"
                 alt="Profile Static"
                 className={`w-full h-full object-contain absolute inset-0 transition-opacity duration-300 ${isProfileHovered ? 'opacity-100' : 'opacity-0'}`}
              />
